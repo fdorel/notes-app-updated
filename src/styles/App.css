@@ -1,0 +1,89 @@
+/**
+ * App-specific CSS styles
+ */
+
+.app-container {
+  min-height: 100vh;
+  background-color: #f7fafc;
+}
+
+/* Gradient backgrounds */
+.gradient-purple-pink {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-blue-green {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Card hover effects */
+.note-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Modal styles */
+.modal-overlay {
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar styles */
+.sidebar-link:hover {
+  background-color: #f7fafc;
+  transform: translateX(4px);
+}
+
+.sidebar-link.active {
+  background-color: #ebf8ff;
+  color: #3182ce;
+}
+
+/* Search bar styles */
+.search-input:focus {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+  border-color: #4299e1;
+}
+
+/* Empty state styles */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.empty-state-icon {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  color: #cbd5e0;
+}
+
+/* Responsive grid */
+.notes-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (min-width: 768px) {
+  .notes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .notes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
